@@ -17,13 +17,13 @@ function criarElementoTarefa(texto) {
 
 function salvar() {
     const todosLi = document.querySelectorAll('li');
-    const array = [];
+    const arrayTarefas = [];
 
     todosLi.forEach(li => {
-        array.push(li.firstChild.textContent); 
+        arrayTarefas.push(li.firstChild.textContent); 
     });
 
-    localStorage.setItem('meustextos', JSON.stringify(array));
+    localStorage.setItem('meustextos', JSON.stringify(arrayTarefas));
 }
 
 botaoAdicionar.addEventListener('click', () => {
