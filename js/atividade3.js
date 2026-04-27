@@ -3,10 +3,10 @@ const botao = document.getElementById('botao');
 const lista = document.getElementById('lista');
 
 
-function adicionarItem() {
+function adicionarItem() {''
     const textoItem = texto.value;
 
-    const novoItem = document.createElement('li ');
+    const novoItem = document.createElement('li');
     novoItem.textContent = textoItem;
 
 
