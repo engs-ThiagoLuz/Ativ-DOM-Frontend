@@ -23,7 +23,7 @@ function salvar() {
         array.push(li.firstChild.textContent); 
     });
 
-    localStorage.setItem('meustextos', JSON.stringify(arrayTarefas));
+    localStorage.setItem('meustextos', JSON.stringify(array));
 }
 
 botaoAdicionar.addEventListener('click', () => {
